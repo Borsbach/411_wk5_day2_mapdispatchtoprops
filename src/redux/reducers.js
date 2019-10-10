@@ -1,10 +1,18 @@
 import { combineReducers } from 'redux'
 
-const user = (state = null) => state
+const user = (state = null, action) => state
 
 // add switch statements in here
 const cars = (state = [], action) => {
-    return state
+  switch(action.type) {
+    case 'ADD_CAR':
+      return [ ...state, action.value ]
+    case 'REMOVE_CAR':
+      const newState = [ ...state ]
+      return newState.splice(action.value, 1)
+    default:
+      return state
+}
 }
 
 export default combineReducers({ user, cars })
