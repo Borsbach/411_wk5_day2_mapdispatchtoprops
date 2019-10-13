@@ -6,14 +6,14 @@ import Car from './containers/Car'
 import Dashboard from './containers/Dashboard'
 
 const Router = () => {
-    return (
-        <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/car/:id" component={Car} />
-            <Route path="/dashboard" component={Dashboard} />
-        </Switch>
-    );
+  return (
+    <Switch>
+      <Route exact path="/" component={Home} />
+      <Route path="/about" component={About} />
+      <Route path="/car/:id" component={Car} />
+      <Route path="/dashboard" component={Dashboard} />
+    </Switch>
+  );
 };
 
 export default Router;

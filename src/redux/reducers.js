@@ -12,7 +12,8 @@ const cars = (state = [], action) => {
       return newState.splice(action.value, 1)
     default:
       return state
-}
+  
+  }
 }
 
 export default combineReducers({ user, cars })
