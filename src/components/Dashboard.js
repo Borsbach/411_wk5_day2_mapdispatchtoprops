@@ -43,7 +43,7 @@ const Dashboard = (props) => {
                 <TableCell>
                   <DeleteIcon
                   // add onClick method here
-                    onClick={(idx) => props.removeCar(idx)}
+                    onClick={() => props.removeCar(idx)}
                     className="icon text-red" />
                 </TableCell>
               </TableRow>

@@ -4,7 +4,7 @@ import { Container, Paper, Chip } from '@material-ui/core';
 
 const Car = (props) => {
   const id = props.match.params.id
-  {/* Change cars to props.cars and remove the cars.json import above */}
+  /* Change cars to props.cars and remove the cars.json import above */
   const car = props.cars.find(c => c.id == id)
 
   return (
